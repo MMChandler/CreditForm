@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>
+      Payment Details
+    </title>
+    <link rel=stylesheet type=text/css href="styles.css">
+  </head>
+  <body>
+    <div id="main_container">
+      <form>
+        <fieldset>
+          <label for='cardType'>Card Type</label>
+          <select id='cardType'>
+            <option>Visa</option>
+            <option>Mastercard</option>
+            <option>American Express</option>
+            <option>Discover</option>
+            <option>Debit</option>
+          </select>
+          <br />
+          <label for='fName'>Name as it Appears on Your Card:</Label><br />
+          <input type="text" id='fName' placeholder="first name" required />
+          <input type="text" id='mInit' placeholder="m.i." />
+          <input type="text" id='lName' placeholder="last name" required />
+          <label for='cNumber'>Card Number</label><br />
+          <input type=number id='cNumber' placeholder='enter your card number' maxlength=19 required />
+          <br />
+          <label for='expMonth'>Expiration Date</label> <label for='secNumber'><a href="https://www.cvvnumber.com/cvv.html" target="_blank" >CVV Code</a></label><br />
+          Month
+          <select id='expMonth'>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          Year
+          <select id='expYear'>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            <option>2031</option>
+            <option>2032</option>
+            <option>2033</option>
+          </select>
+          <input type='number' id='secNumber' placeholder='security code' maxlength=3 required />
+          <input type='submit' value='pay now' />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+
+</html>
